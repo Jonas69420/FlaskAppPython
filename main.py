@@ -6,7 +6,7 @@ def main():
     if app == None: return
 
     app.run(debug=True, host='0.0.0.0', port=8080)
-    print("test")
+    print("no lmao")
 
     print("Flask app shutting down.")
 
