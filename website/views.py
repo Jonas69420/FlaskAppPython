@@ -31,3 +31,7 @@ def home_page():
     set_clicks(1)
     print(load_clicks())
     return render_template("home.html", clicks=load_clicks())
+
+@views.route('/downloads')
+def downloads_page():
+    return render_template("downloads.html")
