@@ -1,5 +1,7 @@
 from website import create_app
 
+isHome = True
+
 def main():
     # Create application
     app = create_app()
