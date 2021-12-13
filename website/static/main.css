@@ -4,12 +4,13 @@ body{
 
 .button{
   /*background button*/
+  font-size: 48px;
+
   text-decoration: none;
   padding: 10px;
   padding-left: 15px;
   padding-right: 15px;
   white-space: nowrap;
-
   border: solid 3px;
   border-color: rgb(10, 210, 255);
 
@@ -40,5 +41,19 @@ body{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
+}
+
+@media screen and (min-width: 1000px) {
+  .button{
+    white-space: nowrap;
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .button{
+    white-space: normal;
+    font-size: 12px;
+  }
 }
