@@ -1,0 +1,37 @@
+body{
+    background-color: #FF5C77;
+}
+
+.button{
+    /*background button*/
+    text-decoration: none;
+    /*background-color: rgba(10, 210, 255, 1);*/
+
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    white-space: nowrap;
+
+    border: solid 3px;
+    border-color: rgb(10, 210, 255);
+
+    /*use button*/
+    font-weight: bold;
+    color: #ffffff;
+
+    transition: all 0.25s ease;
+  }
+
+.button:hover{
+    /*box-shadow: 0px 0px 105px rgba(10, 210, 255, 0.5);*/
+  background-color: rgb(10, 210, 255);
+  color: #ffffff;
+}
+
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
