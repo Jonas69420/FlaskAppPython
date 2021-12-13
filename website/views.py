@@ -29,5 +29,5 @@ def set_clicks(value):
 @views.route('/')
 def home_page():
     set_clicks(1)
-    main.isHome = True
+    print(load_clicks())
     return render_template("home.html", clicks=load_clicks())

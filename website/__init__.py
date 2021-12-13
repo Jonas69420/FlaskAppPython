@@ -6,9 +6,7 @@ def create_app():
 
     # Import urls webpages
     from .views import views
-    from .auth import auth
 
     app.register_blueprint(views, url_prefix='/')
-    app.register_blueprint(auth, url_prefix='/auth')
 
     return app
