@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Downloads{% endblock %}
+
+
+{% block content %}
+<div style="color:#fff;" class="container" align="center">
+  <div align="left">
+     <h1 align="center">
+      Other Games
+    </h1>
+    <h1 align="center">
+      Five night's at robert corp.
+    </h1>
+    
+    {{ url_for('display_image', filename='Untitled.png') }}
+    <img src="/website/Downloads/Untitled.png" alt="you" width="500" height="600">
+
+    <div align="center" style="font-size: 64px;">
+      <a href="./Downloads/Untitled.png", download="image.png">fnarc 1</a>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
