@@ -3,28 +3,34 @@ body{
 }
 
 .button{
-    /*background button*/
-    text-decoration: none;
-    /*background-color: rgba(10, 210, 255, 1);*/
+  /*background button*/
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  white-space: nowrap;
 
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    white-space: nowrap;
+  border: solid 3px;
+  border-color: rgb(10, 210, 255);
 
-    border: solid 3px;
-    border-color: rgb(10, 210, 255);
+  /*use button*/
+  font-weight: bold;
+  color: #ffffff;
 
-    /*use button*/
-    font-weight: bold;
-    color: #ffffff;
+  /*https://stackoverflow.com/a/4407335*/
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 
-    transition: all 0.25s ease;
-  }
+  transition: all 0.25s ease;
+}
 
 .button:hover{
-    /*box-shadow: 0px 0px 105px rgba(10, 210, 255, 0.5);*/
   background-color: rgb(10, 210, 255);
+  text-decoration: none;
   color: #ffffff;
 }
 

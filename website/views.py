@@ -1,6 +1,5 @@
 from flask import Blueprint, render_template
 import json
-import main
 
 views = Blueprint('views', __name__)
 
@@ -31,6 +30,12 @@ def home_page():
     set_clicks(1)
     print(load_clicks())
     return render_template("home.html", clicks=load_clicks())
+
+@views.route('/about')
+def about_page():
+    set_clicks(1)
+    print(load_clicks())
+    return render_template("about.html")
 
 @views.route('/downloads')
 def downloads_page():
