@@ -1,18 +1,51 @@
-body{
-    background-color: #FF5C77;
+/*https://stackoverflow.com/a/43372324*/
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 .button{
   /*background button*/
-  font-size: 48px;
+  display: flex;
 
+  height: 100%;
+  width: 700px;
+
+  justify-content: center;
+  font-size: 48px;
   text-decoration: none;
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+
+  margin: 5px;
+  padding: 5px;
+
   white-space: nowrap;
-  border: solid 3px;
-  border-color: rgb(10, 210, 255);
+  border: solid 4px;
+  border-radius: 250px;
+  border-color: rgb(255, 255, 255);
 
   /*use button*/
   font-weight: bold;
@@ -30,10 +63,10 @@ body{
 }
 
 .button:hover{
-  box-shadow: 0px 0px 50px rgba(255, 252, 105, 0.5); 
-  background-color: rgb(10, 210, 255);
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5); 
+  background-color: rgb(255, 255, 255);
   text-decoration: none;
-  color: #ffffff;
+  color: rgb(63, 63, 63);
 }
 
 
@@ -52,8 +85,13 @@ body{
 }
 
 @media screen and (max-width: 800px) {
-  .button{
+  body{
     white-space: normal;
-    font-size: 12px;
+  }
+
+  .button{
+    white-space: nowrap;
+    width: 100%;
+    font-size: 24px;    
   }
 }
